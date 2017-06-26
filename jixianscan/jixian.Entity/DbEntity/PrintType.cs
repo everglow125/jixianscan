@@ -11,6 +11,13 @@ namespace jixian.Entity
         /// 
         /// <summary>
         public string Type { get; set; }
+
+        /// <summary>
+        /// ¹Ø¼ü×Ö ÓÃ"|"·Ö¸î
+        /// </summary>
+        public string Keyword { get; set; }
+
+        public int SortIndex { get; set; }
         /// <summary>
         /// 
         /// <summary>
