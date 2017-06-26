@@ -41,7 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBaseDal.cs" />
+    <Compile Include="Interfaces\IOrderInfoDal.cs" />
+    <Compile Include="Interfaces\IPrintTypeDal.cs" />
+    <Compile Include="Interfaces\ISettlementInfoDal.cs" />
+    <Compile Include="Interfaces\IMyTradeAccountDal.cs" />
+    <Compile Include="Interfaces\ICustomerTradeInfoDal.cs" />
+    <Compile Include="Interfaces\ICustomerPriceDal.cs" />
+    <Compile Include="Interfaces\ICustomerInfoDal.cs" />
+    <Compile Include="Interfaces\IAccountTypeDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\jixian.Entity\jixian.Entity.csproj">
+      <Project>{6d21ac09-fbc8-4131-bb7c-409a16e5970f}</Project>
+      <Name>jixian.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

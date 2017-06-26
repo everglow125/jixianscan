@@ -40,7 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\jixian.Entity\jixian.Entity.csproj">
+      <Project>{6d21ac09-fbc8-4131-bb7c-409a16e5970f}</Project>
+      <Name>jixian.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jixian.IData\jixian.Data.Inte.csproj">
+      <Project>{8debf56e-d325-44cf-ab9b-6cf0d1c4bd4c}</Project>
+      <Name>jixian.Data.Inte</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\jixian.ILogic\jixian.Logic.Inte.csproj">
+      <Project>{bc509b18-15f6-49b6-84b5-52ca4cf21fbb}</Project>
+      <Name>jixian.Logic.Inte</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

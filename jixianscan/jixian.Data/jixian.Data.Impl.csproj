@@ -67,8 +67,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseDal.cs" />
     <Compile Include="Common\DbHelper.cs" />
     <Compile Include="Common\IDbHelper.cs" />
+    <Compile Include="Impls\AccountTypeDal.cs" />
+    <Compile Include="Impls\CustomerInfoDal.cs" />
+    <Compile Include="Impls\CustomerPriceDal.cs" />
+    <Compile Include="Impls\CustomerTradeInfoDal.cs" />
+    <Compile Include="Impls\MyTradeAccountDal.cs" />
+    <Compile Include="Impls\OrderInfoDal.cs" />
+    <Compile Include="Impls\PrintTypeDal.cs" />
+    <Compile Include="Impls\SettlementInfoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

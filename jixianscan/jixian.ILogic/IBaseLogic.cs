@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace jixian.Data.Inte
+namespace jixian.Logic.Inte
 {
-    public interface IBaseDal<T>
-        where T : class
+    public interface IBaseLogic<T> where T : class
     {
         T QueryById(int id);
         T QueryFirst(T query);
