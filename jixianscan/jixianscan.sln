@@ -1,11 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scanfile", "scanfile\scanfile.csproj", "{D471F1F5-12E9-41BF-A37E-27200DA86F49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.winform", "scanfile\jixian.winform.csproj", "{D471F1F5-12E9-41BF-A37E-27200DA86F49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scanlogic", "scanlogic\scanlogic.csproj", "{D0037201-FAB8-4741-8B5F-AB62764270EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.webApi", "jixian.webApi\jixian.webApi.csproj", "{DF4DA60A-98D6-45A2-A2FA-978640813356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.web", "jixian.web\jixian.web.csproj", "{2BA7BC1A-24E7-4C89-A5DE-1B341C84939B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.windowsService", "jixian.windowsService\jixian.windowsService.csproj", "{04E43623-966A-4C0C-B53A-2B5A61B800D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Data.Inte", "jixian.IData\jixian.Data.Inte.csproj", "{8DEBF56E-D325-44CF-AB9B-6CF0D1C4BD4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Data.Impl", "jixian.Data\jixian.Data.Impl.csproj", "{D9B9B85D-9CB5-4C57-97BA-B091C555426E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Logic.Inte", "jixian.ILogic\jixian.Logic.Inte.csproj", "{BC509B18-15F6-49B6-84B5-52CA4CF21FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Logic.Impl", "jixian.Logic\jixian.Logic.Impl.csproj", "{40C25791-C328-4F5B-840B-F19AB6133DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Common", "jixian.Common\jixian.Common.csproj", "{44545367-7C5F-43A1-88D8-F92D8ED9766D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Entity", "jixian.Entity\jixian.Entity.csproj", "{6D21AC09-FBC8-4131-BB7C-409A16E5970F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jixian.Data.ImplTests", "jixian.Data.ImplTests\jixian.Data.ImplTests.csproj", "{1C804862-D7A0-4AB6-A6F3-7A305843F03A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +41,46 @@ Global
 		{D0037201-FAB8-4741-8B5F-AB62764270EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0037201-FAB8-4741-8B5F-AB62764270EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0037201-FAB8-4741-8B5F-AB62764270EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4DA60A-98D6-45A2-A2FA-978640813356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4DA60A-98D6-45A2-A2FA-978640813356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4DA60A-98D6-45A2-A2FA-978640813356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4DA60A-98D6-45A2-A2FA-978640813356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA7BC1A-24E7-4C89-A5DE-1B341C84939B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA7BC1A-24E7-4C89-A5DE-1B341C84939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA7BC1A-24E7-4C89-A5DE-1B341C84939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA7BC1A-24E7-4C89-A5DE-1B341C84939B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E43623-966A-4C0C-B53A-2B5A61B800D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E43623-966A-4C0C-B53A-2B5A61B800D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E43623-966A-4C0C-B53A-2B5A61B800D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E43623-966A-4C0C-B53A-2B5A61B800D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEBF56E-D325-44CF-AB9B-6CF0D1C4BD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEBF56E-D325-44CF-AB9B-6CF0D1C4BD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEBF56E-D325-44CF-AB9B-6CF0D1C4BD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEBF56E-D325-44CF-AB9B-6CF0D1C4BD4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B9B85D-9CB5-4C57-97BA-B091C555426E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B9B85D-9CB5-4C57-97BA-B091C555426E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B9B85D-9CB5-4C57-97BA-B091C555426E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B9B85D-9CB5-4C57-97BA-B091C555426E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC509B18-15F6-49B6-84B5-52CA4CF21FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC509B18-15F6-49B6-84B5-52CA4CF21FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC509B18-15F6-49B6-84B5-52CA4CF21FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC509B18-15F6-49B6-84B5-52CA4CF21FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C25791-C328-4F5B-840B-F19AB6133DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C25791-C328-4F5B-840B-F19AB6133DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C25791-C328-4F5B-840B-F19AB6133DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C25791-C328-4F5B-840B-F19AB6133DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44545367-7C5F-43A1-88D8-F92D8ED9766D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44545367-7C5F-43A1-88D8-F92D8ED9766D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44545367-7C5F-43A1-88D8-F92D8ED9766D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44545367-7C5F-43A1-88D8-F92D8ED9766D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D21AC09-FBC8-4131-BB7C-409A16E5970F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D21AC09-FBC8-4131-BB7C-409A16E5970F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D21AC09-FBC8-4131-BB7C-409A16E5970F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D21AC09-FBC8-4131-BB7C-409A16E5970F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C804862-D7A0-4AB6-A6F3-7A305843F03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C804862-D7A0-4AB6-A6F3-7A305843F03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C804862-D7A0-4AB6-A6F3-7A305843F03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C804862-D7A0-4AB6-A6F3-7A305843F03A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
