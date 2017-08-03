@@ -10,7 +10,7 @@ namespace jixian.Entity
         /// <summary>
         /// 
         /// <summary>
-        public string Type { get; set; }
+        public string TypeName { get; set; }
 
         /// <summary>
         /// ¹Ø¼ü×Ö ÓÃ"|"·Ö¸î

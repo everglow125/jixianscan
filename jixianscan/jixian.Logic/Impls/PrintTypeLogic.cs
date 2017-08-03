@@ -25,7 +25,7 @@ namespace jixian.Logic.Impl
                 var keywords = item.Keyword.Split('|');
                 foreach (var keyword in keywords)
                 {
-                    result.Add(keyword, item.Type);
+                    result.Add(keyword, item.TypeName);
                 }
             }
             return result;

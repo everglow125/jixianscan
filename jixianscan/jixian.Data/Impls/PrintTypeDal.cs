@@ -14,7 +14,7 @@ namespace jixian.Data.Impl
         }
         protected override string InsertSql()
         {
-            return "";
+            return "Insert into PrintType (TypeName,SortIndex,DefaultUnitPrice,Keyword) values(@TypeName,@SortIndex,@DefaultUnitPrice,@Keyword)";
         }
 
         protected override string TableName

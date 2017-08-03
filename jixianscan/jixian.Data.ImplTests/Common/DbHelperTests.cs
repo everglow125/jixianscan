@@ -35,7 +35,9 @@ CREATE TABLE PrintType
     (
       Id INTEGER PRIMARY KEY  autoincrement
                  NOT NULL ,
-      PrintType NVARCHAR(10) NOT NULL ,
+      TypeName NVARCHAR(10) NOT NULL ,
+      SortIndex INT NOT NULL ,
+      Keyword NVARCHAR(50) NOT NULL ,
       DefaultUnitPrice DECIMAL(18, 2) NOT NULL
     );
 CREATE TABLE CustomerPrice
@@ -126,11 +128,26 @@ CREATE TABLE SettlementInfo
         }
 
         [TestMethod()]
+        public void ExcutePrintType()
+        {
+            var sql = " insert into PrintType (TypeName,SortIndex,Keyword,DefaultUnitPrice) values (@TypeName,@SortIndex,@Keyword,@DefaultUnitPrice) ";
+            List<PrintType> list = new List<PrintType>()
+            {
+                new PrintType(){ TypeName="UV",SortIndex=1,Keyword="UV", DefaultUnitPrice=10},
+                new PrintType(){ TypeName="KT板",SortIndex=2,Keyword="KT板", DefaultUnitPrice=12},
+                new PrintType(){ TypeName="车贴",SortIndex=3,Keyword="车贴", DefaultUnitPrice=15},
+                new PrintType(){ TypeName="喷绘",SortIndex=4,Keyword="喷绘", DefaultUnitPrice=60},
+            };
+            var result = DbHelper.GetInstant(@"E:\\jixianDB", "jixian.db").Excute(sql, list);
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod()]
         public void QueryListTest()
         {
-            var sql = " select *  from AccountType ";
-            var result = DbHelper.GetInstant(@"E:\\jixianDB", "jixian.db").QueryList<AccountType>(sql);
-            var result2 = DbHelper.GetInstant(@"E:\\jixianDB", "jixian.db").QueryFirst<AccountType>(sql);
+            var sql = " select *  from PrintType ";
+            var result = DbHelper.GetInstant(@"E:\\jixianDB", "jixian.db").QueryList<PrintType>(sql);
+            var result2 = DbHelper.GetInstant(@"E:\\jixianDB", "jixian.db").QueryFirst<PrintType>(sql);
             Assert.AreNotEqual(null, result);
         }
     }

@@ -1,4 +1,10 @@
-﻿using System;
+﻿using Autofac;
+using Autofac.Integration.Mvc;
+using jixian.Data.Impl;
+using jixian.Data.Inte;
+using jixian.Logic.Impl;
+using jixian.Logic.Inte;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +22,17 @@ namespace jixian.web
     {
         protected void Application_Start()
         {
+            var builder = new ContainerBuilder();
+            builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+            builder.RegisterType<PrintTypeDal>().As<IPrintTypeDal>().SingleInstance();
+            builder.RegisterType<PrintTypeLogic>().As<IPrintTypeLogic>().SingleInstance();
+
+            builder.RegisterFilterProvider();
+
+            var container = builder.Build();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
